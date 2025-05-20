@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap Theme Toggle</title>
+        <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
+        <link rel="stylesheet" href="css/index.css">
+
+        <!-- FontAwesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+
+    </head>
+
+    <body class="light-mode">
+
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary" id="nav">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.svg" width="30" height="24" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" id="menu" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" name="menu1" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- THEAM BUTTON -->
+        <button id="themeToggle"
+            class="theme position-fixed bg-dark rounded-5 text-light d-flex align-items-center justify-content-center">
+            <i id="themeIcon" class="fa-solid fa-moon fs-4"></i>
+        </button>
+
+        <!-- HERO SECTION -->
+        <section class="hero container p-5 d-flex flex-column align-items-center">
+            <div class="hero-img mt-5">
+                <img src="images/logo.svg" class="" alt="image" height="120">
+            </div>
+            <h2 class="mt-4 px-5 text-center fs-1 fw-bold">Build fast, responsive sites with Bootstrap</h2>
+            <p class="px-5 mt-4 text-center text-secondary fs-3">Powerful, extensible, and feature-packed frontend
+                toolkit.
+                Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life
+                with
+                powerful JavaScript plugins.</p>
+
+            <div class="container-fluid d-flex m-3 gap-4 justify-content-center">
+                <button class="btn btn-secondary py-3">i bootstrap@5.3.6 &nbsp;<i class="fa-solid fa-copy"></i></button>
+                <button class="btn btn-light btn-outline-success py-3">Read ME &nbsp;<i
+                        class="fa-brands fa-readme"></i></button>
+            </div>
+        </section>
+
+        <!-- SECTION-2 -->
+        <section class="sec-2 container p-5 d-flex flex-column align-items-center text-center ">
+            <i class="fa-solid fa-code bg-dark text-light py-4 px-5 fs-2 rounded-2"></i>
+            <h2 class="fs-1 fw-bold my-3">Get started any way you want</h2>
+            <p class="text-secondary fs-3">Jump right into building with Bootstrap—use the CDN, install it via package
+                manager, or download the source code.</p>
+            <span class="fs-4 mb-5"><a href="#">Read installation docs</a></span>
+        </section>
+
+        <!-- SECTION-3 -->
+        <section class="container sec-3">
+            <div class="row gap-2 justify-content-between">
+                <div class="col d-flex flex-column p-5">
+                    <i class="fa-solid fa-box-open my-3 fs-1"></i>
+                    <h2 class="fw-bold my-2">Install via package manager</h2>
+                    <p class="fs-5 my-2">Install Bootstrap’s source Sass and JavaScript files via npm, RubyGems,
+                        Composer, or Meteor. Package-managed installs don’t include documentation or our full build
+                        scripts. You can also use any demo from our Examples repo to quickly jumpstart Bootstrap
+                        projects.</p>
+
+                    <div class="text p-4 border border-3 my-2 rounded-3 d-flex justify-content-between">
+                        <span>$ npm install bootstrap@5.3.6</span>
+                        <i class="fa-solid fa-copy"></i>
+                    </div>
+                    <div class="text p-4 border border-3 my-2 rounded-3 d-flex justify-content-between">
+                        <span>$ gem install bootstrap -v 5.3.6</span>
+                        <i class="fa-solid fa-copy"></i>
+                    </div>
+
+                    <p class="my-3"><a href="#">Read our installation docs</a> for more info and additional package
+                        managers.</p>
+                </div>
+
+                <div class="col d-flex flex-column p-5">
+                    <i class="fa-solid fa-globe my-3 fs-1"></i>
+                    <h2 class="fw-bold my-2">Include via CDN</h2>
+                    <p class="fs-5 my-2">When you only need to include Bootstrap’s compiled CSS or JS, you can use
+                        jsDelivr. See it in action with our simple quick start, or browse the examples to jumpstart your
+                        next project. You can also choose to include Popper and our JS separately.</p>
+
+                    <div class="text p-4 pb-2 border border-3 my-2 rounded-3 d-flex justify-content-between">
+                        <pre>&lt;link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous"&gt;</pre>
+                        <i class="fa-solid fa-copy"></i>
+                    </div>
+                    <div class="text p-4 pb-2 border border-3 my-2 rounded-3 d-flex justify-content-between">
+                        <pre>&lt;script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"&gt;&lt;/script&gt;</pre>
+                        <i class="fa-solid fa-copy"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION-4 -->
+        <section class=" sec-4 container mb-5 px-5 d-flex flex-column justify-content-center align-items-center">
+            <h3>Read our getting started guides</h3>
+            <p>Get a jump on including Bootstrap's source files in a new project with our official guides.</p>
+            <div class="row my-2 justify-content-center align-items-center">
+                <div class="col">
+                    <img src="images/weyback.png" width="150" alt="">
+                </div>
+                <div class="col">
+                    <img src="images/parcel.png" width="110" alt="">
+                </div>
+                <div class="col">
+                    <img src="images/vite.png" width="155" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION -5 -->
+        <section class="sec-5 mb-5 p-5 container">
+            <h2 class="fw-bold mb-3">Customize everything with Sass</h2>
+            <div class="para my-2">
+                <p>Bootstrap utilizes Sass for a modular and customizable architecture. Import only the components you
+                    need, enable global options like gradients and shadows, and write your own CSS with our variables,
+                    maps, functions, and mixins.</p>
+            </div>
+            <a href="#">Learn more about customizing -></a>
+        </section>
+
+        <!-- SECTION - 6 -->
+        <section class="container sec-3">
+            <div class="row gap-2 justify-content-between">
+                <div class="col d-flex flex-column p-5">
+                    <h2 class="fw-bold my-2">Include all of Bootstrap’s Sass</h2>
+                    <p class="fs-5 my-2">Import one stylesheet and you're off to the races with every feature of our
+                        CSS.</p>
+
+                    <div class="text p-4 border border-3 my-2 rounded-3 d-flex justify-content-between">
+                        <pre>// Variable overrides first
+$primary: #900;
+$enable-shadows: true;
+$prefix: "mo-";
+// Then import Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";</pre>
+                        <i class="fa-solid fa-copy"></i>
+                    </div>
+                    
+                    <p class="my-3"> Learn more about our<a href="#">global Sass options.</a></p>
+                </div>
+
+                <div class="col d-flex flex-column p-5">
+                    <h2 class="fw-bold my-2">Include all of Bootstrap’s Sass</h2>
+                    <p class="fs-5 my-2">The easiest way to customize Bootstrap—include only the CSS you need.</p>
+
+                    <div class="text p-4 border border-3 my-2 rounded-3 d-flex justify-content-between">
+                        <pre>// Functions first
+@import "../node_modules/bootstrap/scss/functions";
+
+// Variable overrides second
+$primary: #900;
+$enable-shadows: true;
+$prefix: "mo-";
+
+// Required Bootstrap imports
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/variables-dark";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+
+// Optional components
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/helpers";
+@import "../node_modules/bootstrap/scss/utilities/api";</pre>
+                        <i class="fa-solid fa-copy"></i>
+                    </div>
+                    
+                    <p class="my-3"> Learn more about our<a href="#">global Sass options.</a></p>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- FOOTER -->
+        <section class="footer container my-5 p-5">
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex gap-2 align-items-center">
+                        <i class="fa-brands fa-bootstrap fs-2"></i>
+                        <p class="fs-3">Bootstrap</p>
+                    </div>
+                    <p>Designed and built with all the love in the world by the Bootstrap team with the help of our contributors.</p>
+                    <p>Code licensed MIT, docs CC BY 3.0.</p>
+                    <p>Currently v5.3.6.</p>
+                </div>
+                <div class="col">
+                    <ul class="list-unstyled text-capitalize">
+                        <li class="fw-bold fs-5 mb-2 ">Links</li>
+                        <li class=" mb-2">home</li>
+                        <li class=" mb-2">doc</li>
+                        <li class=" mb-2">examples</li>
+                        <li class=" mb-2">icons</li>
+                        <li class=" mb-2">theams</li>
+                        <li class=" mb-2">blog</li>
+                        <li class=" mb-2">swag store</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="list-unstyled text-capitalize">
+                        <li class="fw-bold fs-5 mb-2 ">guides</li>
+                        <li class=" mb-2">getting started</li>
+                        <li class=" mb-2">starter template</li>
+                        <li class=" mb-2">web pack</li>
+                        <li class=" mb-2">parcel</li>
+                        <li class=" mb-2">vite</li>
+                        <li class=" mb-2">blog</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="list-unstyled text-capitalize">
+                        <li class="fw-bold fs-5 mb-2 ">projects</li>
+                        <li class=" mb-2">bootstrap 5</li>
+                        <li class=" mb-2">bootstrap 4</li>
+                        <li class=" mb-2">icons</li>
+                        <li class=" mb-2">RFS</li>
+                        <li class=" mb-2">example repo</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="list-unstyled text-capitalize">
+                        <li class="fw-bold fs-5 mb-2 ">community</li>
+                        <li class=" mb-2">issues</li>
+                        <li class=" mb-2">discussions 4</li>
+                        <li class=" mb-2">corporate sponsors</li>
+                        <li class=" mb-2">open collective</li>
+                        <li class=" mb-2">stack overflow</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- BOOTSTRAP JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+            crossorigin="anonymous"></script>
+
+        <!-- JAVA SCRIPT -->
+        <script>
+            const themeToggle = document.getElementById("themeToggle");
+            const themeIcon = document.getElementById("themeIcon");
+            const nav = document.getElementById("nav");
+            const menu = document.getElementById("menu");
+            const menu1 = document.getElementsByName("menu1");
+            const body = document.body;
+
+            themeToggle.addEventListener("click", () => {
+                const isDark = body.classList.contains("dark-mode");
+
+                if (isDark) {
+                    body.classList.remove("dark-mode");
+                    body.classList.add("light-mode");
+                    themeIcon.classList.remove("fa-sun");
+                    themeIcon.classList.add("fa-moon");
+                    nav.classList.replace("bg-dark", "bg-body-tertiary");
+                } else {
+                    body.classList.remove("light-mode");
+                    body.classList.add("dark-mode");
+                    themeIcon.classList.remove("fa-moon");
+                    themeIcon.classList.add("fa-sun");
+                    nav.classList.replace("bg-body-tertiary", "bg-dark");
+                    nav.classList.add("navbar-dark")
+                }
+            });
+        </script>
+
+    </body>
+
+</html>
