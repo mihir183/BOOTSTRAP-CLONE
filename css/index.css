@@ -7,12 +7,12 @@
 .light-mode {
     background-color: #ffffff;
     color: #000000;
-  }
+}
 
-  .dark-mode {
+.dark-mode {
     background-color: #121212;
     color: #ffffff;
-  }
+}
 
 .theme {
     position: fixed;
@@ -24,7 +24,7 @@
 
     &:hover {
 
-        background-color: rgb(48, 46, 46)!important;
+        background-color: rgb(48, 46, 46) !important;
 
         i {
             color: black;
@@ -39,15 +39,15 @@
     }
 }
 
-.sec-3{
-    p{
+.sec-3 {
+    p {
         line-height: 1.4;
     }
 
-    .text{
+    .text {
         width: 540px;
 
-        pre{
+        pre {
             width: 450px;
             line-height: 1.5;
         }
@@ -56,29 +56,28 @@
 }
 
 .sec-4{
-    .row{
-        .col{
+    .images{
+        img{
+            transition:transform .2s;
             &:hover{
-                img{
-                    transform:scale(1);
-                }
+                transform: scale(1.1);
             }
         }
     }
 }
 
-.sec-5{
-    .para{
+.sec-5 {
+    .para {
         width: 55%;
         line-height: 1.5;
     }
 }
 
-.footer{
-    .row{
-        .col{
-            &:first-child{
-                p{
+.footer {
+    .row {
+        .col {
+            &:first-child {
+                p {
                     font-size: 10px;
                 }
             }
